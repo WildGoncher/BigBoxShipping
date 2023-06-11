@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
+
+/*marcellus SC @import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
+font-family: 'Marcellus SC', serif;*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 400;
+    cursor: default;
+}
+
+
+.header {
+    max-height: 70px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 30px;
+    background-color: #004081;
+    
+}
+
+.nav-logo{
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.nav-links__container {
+    list-style: none;
+}
+
+.nav-links__container li {
+    display: inline-block;
+    padding: 0px 25px;
+      margin-right: 80px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.7em;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.button-header {
+
+    padding: 15px 50px;
+    font-size: 1.7em;
+    border: none;
+    background-color: #fff;
+    color: #004081;
+    text-transform: uppercase;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.section{
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    background-image: url(/img/wallpaper3.jpg);
+    background-position: top center;
+    background-size: cover;
+
+}
+
+#about {
+    text-align: center;
+}
+
+.title-main {
+    box-sizing: border-box;
+    max-width: 1291px;
+    font-size: 15rem;
+    color: #fff;
+    text-align: left;
+    text-transform: uppercase;
+    padding-top: 3%;
+    margin-left: 30px;
+}
+
+.text-main {
+    color:#fff;
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 30px;
+    font-size: 4em;
+}
+
+.button-main {
+    margin-top: 80px;
+    padding: 29px 48px;
+    font-size: 3.2em;
+    border: none;
+    background-color: #004081;
+    color: #f0f2ff;
+    position: absolute;
+    left: 30px;
+    font-weight: 700;
+    cursor: pointer;
+}   
