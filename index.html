@@ -9,7 +9,7 @@
   </head>
   <body>
     <header class="header">
-      <img class="nav-logo" src="img/Logo1.png" width="70px"  alt="logo" />
+      <img class="nav-logo" src="img/Logo1.png" width="70" alt="logo" />
       <nav>
         <ul class="nav-links__container">
           <li><a href="#about" class="nav-link">Компания</a></li>
@@ -17,26 +17,48 @@
           <li><a href="#contacts" class="nav-link">Контакты</a></li>
         </ul>
       </nav>
-      <a class="button-link" href="tel:123456"><button class="button-header">Позвонить</button></a>
+      <a class="button-link" href="tel:123456"
+        ><button class="button-header">Позвонить</button></a
+      >
     </header>
     <main class="main">
-      <section class="section" id="about">
+      <video autoplay muted loop id="videoBG">
+        <source src="vid/SeaContainerBackgroundVid.mp4" type="video/mp4" />
+      </video>
+      <section class="section section-main" id="greetings">
         <h1 class="title-main">Транспортные услуги морем</h1>
 
         <p class="text text-main">
-          Контейнерные перевозки любых грузов в Калининград 
+          Контейнерные перевозки любых грузов в Калининград
         </p>
-        <a class="button-link" href="#"><button class="button-main">Хочу отправить груз</button></a>
-
+        <a class="button-link" href="#"
+          ><button class="button-main">Хочу отправить груз</button></a
+        >
       </section>
-      <section class="section" id="services">
-        <h2 class="title-sub">Услуги</h2>
-        <p class="text text-services">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel hic
-          inventore optio exercitationem dignissimos modi consequatur velit quo
-          quasi possimus aliquid labore, ab unde tenetur maiores eius deserunt
-          aut veniam?
-        </p>
+      <section class="section section-stages" id="stages">
+        <h2 class="title-sub">Мы осуществляем транспортировку в 5 этапов:</h2>
+        <ul class="stages-list">
+          <li class="stage stage-left">
+            <img src="img/icon/contractSign.png" alt="заключение договора" />
+            <p class="stages-text-bubble">Заключение договора</p>
+          </li>
+          <li class="stage stage-right">
+            <img src="img/icon/loadedCar.png" alt="транспортировка от отправителя" />
+            <p class="stages-text-bubble">Вывоз груза от отправителя</p>
+          </li>
+          <li class="stage stage-left">
+            <img src="img/icon/containerCrane.png" />
+            <p class="stages-text-bubble">Погрузка на судно</p>
+          </li>
+          <li class="stage stage-right">
+            <img src="img/icon/containerShip.png" />
+            <p class="stages-text-bubble">Перевозка в порт Калининград</p>
+          </li>
+          <li class="stage stage-left">
+            <img src="img/icon/truck.png" alt="доставка получателю" />
+            <p class="stages-text-bubble">Доставка груза получателю</p>
+          </li>
+        </ul>
       </section>
       <section class="section" id="advantages">
         <h2 class="title-sub">Услуги</h2>
@@ -61,6 +83,29 @@
         </form>
       </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div>
+        Icons made by
+        <a
+          href="https://www.flaticon.com/authors/vectorsmarket15"
+          title="vectorsmarket15"
+          >vectorsmarket15</a
+        >
+        from
+        <a href="https://www.flaticon.com/" title="Flaticon"
+          >www.flaticon.com</a
+        >
+      </div>
+      <div>
+        Icons made by
+        <a href="https://www.flaticon.com/authors/sbts2018" title="SBTS2018"
+          >SBTS2018</a
+        >
+        from
+        <a href="https://www.flaticon.com/" title="Flaticon"
+          >www.flaticon.com</a
+        >
+      </div>
+    </footer>
   </body>
 </html>
