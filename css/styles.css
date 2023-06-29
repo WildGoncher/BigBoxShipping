@@ -2,7 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap");
 
 /*marcellus SC @import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
-font-family: 'Marcellus SC', serif;*/
+font-family: 'Marcellus SC', serif;
+
+MAYBE USE IT FOR THE COMPANY NAME
+
+*/
 
 * {
   box-sizing: border-box;
@@ -99,7 +103,7 @@ nav ul li:hover::after {
   height: 100vh;
   max-width: 100%;
 
-  border: 1px solid red;
+  border: 1px solid greenyellow;
 }
 .section-main {
   height: calc(100vh - 70px);
@@ -107,14 +111,10 @@ nav ul li:hover::after {
     background-position: top center;
     background-size: cover;*/
 }
-/*
-#about {
-    text-align: center;
-}*/
 
 .title-main {
   box-sizing: border-box;
-  max-width: 1291px;
+  max-width: 1290px;
   font-size: 15rem;
   color: #fff;
   text-align: left;
@@ -150,11 +150,10 @@ nav ul li:hover::after {
   transition: 0.3s;
 }
 
-
 /*-----------------Stages------------------------------*/
+
 .section-stages {
   height: 100vh;
-
 }
 
 .title-sub {
@@ -164,8 +163,7 @@ nav ul li:hover::after {
   margin-left: 50px;
 }
 
-.stages-list {
-
+.stages__list {
   display: flex;
   flex-wrap: wrap;
   margin: 100px 50px 60px 50px;
@@ -176,7 +174,7 @@ nav ul li:hover::after {
 }
 
 .stage {
-    max-width: fit-content;
+  max-width: fit-content;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
@@ -184,17 +182,17 @@ nav ul li:hover::after {
   padding: 20px 30px;
   border-radius: 50px;
   position: relative;
-  font-size: 5em;
+  font-size: 4em;
   text-align: center;
-   box-shadow: inset 0px 0px 0px 5px #fff;
+  box-shadow: inset 0px 0px 0px 5px #fff;
 }
 
 .stage img {
-  height: 15em;
+  height: 13em;
 }
 
 .stage p {
-    max-width: 9em;
+  max-width: 9em;
   font-size: inherit;
   color: #fff;
   padding-left: 20px;
@@ -217,24 +215,162 @@ nav ul li:hover::after {
   content: "" counter(stage);
 }
 
-.stage:nth-child(2)  {
-    margin-right: 60px;
-    margin-left: auto;
-    transform: translateY(-60px);
-    
+.stage:nth-child(2) {
+  margin-right: 60px;
+  margin-left: auto;
+  transform: translateY(-60px);
 }
 
 .stage:nth-child(4) {
-      margin-right: 60px;
-    margin-left: auto;
-    transform: translateY(-120px);
+  margin-right: 60px;
+  margin-left: auto;
+  transform: translateY(-120px);
 }
 .stage:nth-child(3),
 .stage:nth-child(5) {
   transform: translateY(-80px);
 }
 
-
 .stage:nth-child(5) {
-   transform: translateY(-160px);
+  transform: translateY(-160px);
+}
+
+/*--------------------Containers--------------*/
+
+.containers-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  padding-left: 75px;
+  padding-right: 75px;
+  margin-top: 50px;
+}
+
+.container__img {
+  max-width: 512px;
+}
+
+.containers__list {
+  max-width: 882px;
+  list-style: none;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container-type {
+  max-width: 380px;
+  background-color: #004081;
+  margin-right: 60px;
+  margin-bottom: 60px;
+  padding: 30px 25px;
+  box-shadow: inset 0px 0px 0px 5px #fff;
+  border-radius: 30px;
+}
+
+.container-type h3 {
+  font-size: 2.5em;
+  padding-bottom: 1.2em;
+  font-weight: 700;
+}
+
+.container-type p {
+  font-size: 2.3em;
+  display: block;
+}
+
+.container-type strong {
+  font-size: inherit;
+  font-weight: 700;
+}
+
+/*---------------------Prices------------*/
+
+.title-prices {
+  font-size: 4.7rem;
+  color: #fff;
+  margin: 70px auto;
+  text-align: center;
+}
+
+.prices__list {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-items: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.prices__item {
+  position: relative;
+  text-align: center;
+  border-radius: 50px;
+}
+
+.prices-thumbnail {
+  max-width: 502px;
+  width: 100%;
+  border-radius: 5em;
+  opacity: 95%;
+  background-color: #fff;
+  border: 5px solid #004081;
+}
+
+.prices-text__container {
+  font-size: inherit;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  max-width: 500px;
+  width: 100%;
+  padding: 4em 1em;
+}
+
+.route {
+  font-size: 5em;
+  color: #004081;
+  font-weight: 700;
+}
+
+.price {
+  font-size: 6em;
+  color: #004081;
+  font-weight: 700;
+  padding-top: 1em;
+}
+
+.vat {
+  font-size: 3em;
+  color: #004081;
+}
+
+.prices__button {
+  margin-top: 3.7em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 29px 48px;
+  font-size: 3.2em;
+  border: none;
+  background-color: #004081;
+  color: #fff;
+
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.prices__button:hover {
+  box-shadow: inset 0px 0px 0px 3px #fff;
+  transition: 0.3s;
+}
+
+
+
+/*------------------------About---------------------------*/
+
+
+.about-advantages {
+  width: 100%;
 }

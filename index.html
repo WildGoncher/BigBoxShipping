@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Морские перевозки грузов"> 
     <link rel="stylesheet" href="css/styles.css" />
     <title>Морские перевозки</title>
   </head>
@@ -37,50 +38,147 @@
       </section>
       <section class="section section-stages" id="stages">
         <h2 class="title-sub">Мы осуществляем транспортировку в 5 этапов:</h2>
-        <ul class="stages-list">
-          <li class="stage stage-left">
-            <img src="img/icon/contractSign.png" alt="заключение договора" />
+        <ul class="stages__list">
+          <li class="stage">
+            <img
+              class="container__img"
+              src="img/icon/contractSign.png"
+              alt="заключение договора"
+            />
             <p class="stages-text-bubble">Заключение договора</p>
           </li>
-          <li class="stage stage-right">
-            <img src="img/icon/loadedCar.png" alt="транспортировка от отправителя" />
+          <li class="stage">
+            <img
+              src="img/icon/loadedCar.png"
+              alt="транспортировка от отправителя"
+            />
             <p class="stages-text-bubble">Вывоз груза от отправителя</p>
           </li>
-          <li class="stage stage-left">
+          <li class="stage">
             <img src="img/icon/containerCrane.png" />
             <p class="stages-text-bubble">Погрузка на судно</p>
           </li>
-          <li class="stage stage-right">
+          <li class="stage">
             <img src="img/icon/containerShip.png" />
             <p class="stages-text-bubble">Перевозка в порт Калининград</p>
           </li>
-          <li class="stage stage-left">
+          <li class="stage">
             <img src="img/icon/truck.png" alt="доставка получателю" />
             <p class="stages-text-bubble">Доставка груза получателю</p>
           </li>
         </ul>
       </section>
-      <section class="section" id="advantages">
-        <h2 class="title-sub">Услуги</h2>
-
-        <ul class="list-advantages">
-          <li class="item-advantage">Преимущество 1</li>
-          <li class="item-advantage">Преимущество 2</li>
-          <li class="item-advantage">Преимущество 3</li>
-          <li class="item-advantage">Преимущество 4</li>
+      <section class="section" id="containers">
+        <h2 class="title-sub">Наши контейнеры</h2>
+        <div class="containers-wrapper">
+          <img src="img/icon/containerBunch.png" alt="куча контейнеров" />
+          <ul class="containers__list">
+            <li class="container-type">
+              <h3 class="title-cont-name">40' Dry Van (Dry Freight)</h3>
+              <p class="container-description">
+                <strong>Стандартный</strong> 40-футовый контейнер с объемом 67.5
+                м3 и максимальной грузоподъемностью 27 т.
+              </p>
+              <p class="container-sizes">
+                Внутренние размеры <strong><br />д.ш.в.: 12х2.35х2,38 м</strong>
+              </p>
+              <p class="container-capacity">
+                Вмещает <strong>25</strong> европалет.
+              </p>
+            </li>
+            <li class="container-type">
+              <h3 class="title-cont-name">40' High Cube</h3>
+              <p class="container-description">
+                40-футовый контейнер с увеличенной высотой, объемом 75.8 м3 и
+                максимальной грузоподъемностью 27 т.
+              </p>
+              <p class="container-sizes">
+                Внутренние размеры <strong><br />д.ш.в.: 12х2.35х2,69 м</strong>
+              </p>
+              <p class="container-capacity">
+                Вмещает <strong>25</strong> европалет.
+              </p>
+            </li>
+            <li class="container-type">
+              <h3 class="title-cont-name">40' High Cube Pallet Wide</h3>
+              <p class="container-description">
+                40-футовый контейнер с увеличенной высотой и шириной, объемом
+                78.7 м3 и максимальной грузоподъемностью 27 т.
+              </p>
+              <p class="container-sizes">
+                Внутренние размеры <strong><br />д.ш.в.: 12х2.44х2,69 м</strong>
+              </p>
+              <p class="container-capacity">
+                Вмещает <strong>29</strong> европалет.
+              </p>
+            </li>
+            <li class="container-type">
+              <h3 class="title-cont-name">40' Open Top</h3>
+              <p class="container-description">
+                40-футовый контейнер с возможностью верхней загрузки, объемом
+                75.8 м3 и максимальной грузоподъемностью 27 т.
+              </p>
+              <p class="container-sizes">
+                Внутренние размеры <strong><br />д.ш.в.: 12х2.35х2,69 м</strong>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section" id="prices">
+        <h2 class="title-sub">
+          Мы предлагаем доставку груза из любой точки России в Калининград и
+          наоборот - из Калининграда в любую точку России.
+        </h2>
+        <h3 class="title-prices">Популярные маршруты и стоимость перевозок</h3>
+        <ul class="prices__list">
+          <li class="prices__item">
+            <img
+              class="prices-thumbnail"
+              src="img/icon/SaintPetersburg.png"
+              alt="Разводной мост Санкт-петербург"
+            />
+            <div class="prices-text__container">
+              <p class="route">Санкт-Петербург - Калининград</p>
+              <p class="price">260 000 &#8381;</p>
+              <p class="vat">(без НДС)</p>
+            </div>
+          </li>
+          <li class="prices__item">
+            <img
+              class="prices-thumbnail"
+              src="img/icon/Moscow.png"
+              alt="Собор Василия Блаженного"
+            />
+            <div class="prices-text__container">
+              <p class="route">Москва - Калининград</p>
+              <p class="price">320 000 &#8381;</p>
+              <p class="vat">(без НДС)</p>
+            </div>
+          </li>
+          <li class="prices__item">
+            <img
+              class="prices-thumbnail"
+              src="img/icon/RuMapPin.png"
+              alt="Карта Российской Федерации"
+            />
+            <div class="prices-text__container">
+              <p class="route">Рассчитать стоимость для своей локации</p>
+              <a class="button-link" href="#"
+                ><button class="prices__button">Узнать стоимость</button></a
+              >
+            </div>
+          </li>
         </ul>
       </section>
-      <section class="section" id="contacts">
-        <h2 class="title-sub">Контактная информация</h2>
-        <ul class="contacts-list">
-          <li class="item-contact">Телефон</li>
-          <li class="item-contact">Почта</li>
-          <li class="item-contact">Телеграм</li>
-        </ul>
-        <form class="contact-us">
-          <input type="text" />
-          <button type="button">Отправить</button>
-        </form>
+      <section class="section" id="about">
+        <img class="about-map" src="svg/MapLarge.svg" alt="карта России вместе с Европой">
+        <div class="about-text__container">
+          <h2>О нас</h2>
+          <p class="about__text">BIG BOX SHIPPING - является молодой, стремительно развивающейся транспортной компанией.</p>
+          <p class="about__text">Миссией нашей команды является организация устойчивого развития в области грузоперевозок между Калининградом и остальными регионами Российской Федерации. Мы стараемся делать все возможное, чтобы наши клиенты могли удовлетворять свои потребности в максимально простой форме и в кратчайшие сроки.</p>
+          <img class="about-advantages" src="svg/SeaContainerAdvantages.svg" alt="Наши преимущества">
+        </div>
       </section>
     </main>
     <footer class="footer">
