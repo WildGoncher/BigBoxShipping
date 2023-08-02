@@ -18,7 +18,8 @@ MAYBE USE IT FOR THE COMPANY NAME
   cursor: default;
 }
 
-/*------------------Header---------------*/
+/*====================Header====================*/
+
 .header {
   height: 70px;
   display: flex;
@@ -88,7 +89,7 @@ nav ul li:hover::after {
   transition: 0.3s;
 }
 
-/*---------------------------------Main--------------------*/
+/*====================Main====================*/
 
 #videoBG {
   position: fixed;
@@ -107,9 +108,6 @@ nav ul li:hover::after {
 }
 .section-main {
   height: calc(100vh - 70px);
-  /*background-image: url(/img/wallpaper3.jpg);
-    background-position: top center;
-    background-size: cover;*/
 }
 
 .title-main {
@@ -150,7 +148,7 @@ nav ul li:hover::after {
   transition: 0.3s;
 }
 
-/*-----------------Stages------------------------------*/
+/*====================Stages====================*/
 
 .section-stages {
   height: 100vh;
@@ -235,7 +233,7 @@ nav ul li:hover::after {
   transform: translateY(-160px);
 }
 
-/*--------------------Containers--------------*/
+/*-====================Containers====================*/
 
 .containers-wrapper {
   display: flex;
@@ -285,7 +283,7 @@ nav ul li:hover::after {
   font-weight: 700;
 }
 
-/*---------------------Prices------------*/
+/*====================Prices====================*/
 
 .title-prices {
   font-size: 4.7rem;
@@ -366,11 +364,37 @@ nav ul li:hover::after {
   transition: 0.3s;
 }
 
+/*====================About====================*/
+.about-lining {
+  display: flex;
+}
 
+.about-text__container {
+  padding-left: 75px;
+  padding-right: 75px;
+  display: flex;
+  flex-direction: column;
+}
 
-/*------------------------About---------------------------*/
-
+.about__title {
+  margin-left: 0;
+  margin-bottom: 35px;
+}
+.about__text {
+  font-size: 3em;
+  color: #fff;
+  margin-bottom: 35px;
+}
 
 .about-advantages {
-  width: 100%;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+.about-map {
+  width: 100vh;
+  border-radius: 0 50% 50% 0;
+}
+
+/*====================Footer====================*/
