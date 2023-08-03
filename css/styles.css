@@ -21,12 +21,13 @@ MAYBE USE IT FOR THE COMPANY NAME
 /*====================Header====================*/
 
 .header {
-  height: 70px;
+  height: 7em;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   padding: 30px 30px;
   background-color: #004081;
+  border-bottom: solid 2px #fff;
 }
 
 .nav-logo {
@@ -82,6 +83,7 @@ nav ul li:hover::after {
   text-transform: uppercase;
   border-radius: 50px;
   cursor: pointer;
+  
 }
 
 .button-header:hover {
@@ -91,14 +93,29 @@ nav ul li:hover::after {
 
 /*====================Main====================*/
 
+.overlay {
+position: fixed;
+background: linear-gradient(rgba(0, 64, 129, 0.9), rgba(88, 172, 255, 0.75));
+top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ z-index: -1;
+}
+
+
 #videoBG {
   position: fixed;
   right: 0;
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
-  z-index: -1;
+  z-index: -2;
 }
+
+
+
+
 .section {
   width: 100vw;
   height: 100vh;
@@ -107,7 +124,7 @@ nav ul li:hover::after {
   border: 1px solid greenyellow;
 }
 .section-main {
-  height: calc(100vh - 70px);
+  height: calc(100vh - 7em);
 }
 
 .title-main {
@@ -398,3 +415,39 @@ nav ul li:hover::after {
 }
 
 /*====================Footer====================*/
+footer {
+  background-color: #fff;  
+}
+
+.dev {
+  float:right;
+  display: flex;
+  align-items: center;
+  
+}
+
+.made_by {
+  text-decoration: none;
+  color: #004081;
+  padding-right: 10px;
+  font-size: 2em;
+}
+
+.dev-hover {
+  font-size: 2rem;
+}
+.made_by:hover > .dev-hover  {
+  
+  font-weight: 700;
+}
+
+.dev-icon {
+  width: 60px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.dev-icon:hover {
+  width: 65px;
+}
