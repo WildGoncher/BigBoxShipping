@@ -10,12 +10,15 @@ MAYBE USE IT FOR THE COMPANY NAME
 /*=================Color Palette===============*/
 
 :root {
-  --overlay1-color1: rgba(129, 41, 0, 0.45);
-  --overlay1-color2: rgba(21, 173, 178, 0.75) 75%;
-  --overlay1-color3: rgba(232, 124, 253, 0.45);
-  --overlay2-color1: rgba(232, 124, 253, 0.45);
-  --overlay2-color2: rgba(21, 173, 178, 0.75) 75%;
-  --overlay2-color3: rgba(129, 41, 0, 0.45);
+  --overlay1-color1: rgba(0, 0, 0, 0.35);
+  --overlay1-color2: rgba(0, 0, 0, 0.75) 75%;
+  --overlay1-color3: rgb(255, 255, 255);
+  --overlay2-color1: rgba(255, 255, 255, 0.99);
+  --overlay2-color2: rgba(0, 0, 0, 0.22) 75%;
+  --overlay2-color3: rgba(0, 0, 0, 0.35);
+
+  --main-title-color: rgb(255, 255, 255);
+  --sub-title-color: rgb(0, 64, 129);
 }
 
 * {
@@ -38,7 +41,7 @@ MAYBE USE IT FOR THE COMPANY NAME
   justify-content: flex-end;
   align-items: center;
   padding: 30px 30px;
-  background-color: #004081;
+  background-color: rgb(0, 64, 129);
   border-bottom: solid 2px #fff;
 }
 
@@ -89,16 +92,19 @@ nav ul li:hover::after {
   max-width: 196px;
   padding: 15px 50px;
   font-size: 1.7em;
-  border: none;
+border: none;
   background-color: #fff;
   color: #004081;
+  font-weight: 700;
   text-transform: uppercase;
   border-radius: 50px;
   cursor: pointer;
 }
 
 .button-header:hover {
-  box-shadow: inset 0px 0px 0px 3px #58acff;
+  box-shadow: inset 0px 0px 0px 3px #fff;
+  background-color: #004081;
+  color: #fff;
   transition: 0.3s;
 }
 
@@ -129,7 +135,7 @@ nav ul li:hover::after {
 }
 
 #videoBG {
-  position: fixed;
+  position: absolute;
   right: 0;
   bottom: 0;
   min-width: 100%;
@@ -138,11 +144,12 @@ nav ul li:hover::after {
 }
 
 .section {
-  width: 100vw;
-  height: 100vh;
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  min-height: 720px;
 
-  /* border: 1px solid greenyellow;*/
+  border: 1px solid greenyellow;
+
 }
 .section-main {
   height: calc(100vh - 7em);
@@ -150,9 +157,10 @@ nav ul li:hover::after {
 
 .title-main {
   box-sizing: border-box;
-  max-width: 1290px;
-  font-size: 15rem;
-  color: #fff;
+  
+  max-width: 12.9em;
+  font-size: 15em;
+  color: var(--main-title-color);
   text-align: left;
   text-transform: uppercase;
   padding-top: 30px;
@@ -160,7 +168,7 @@ nav ul li:hover::after {
 }
 
 .text-main {
-  color: #fff;
+  color: var(--main-title-color);
   text-align: left;
   margin-left: 50px;
   margin-top: 30px;
@@ -168,45 +176,50 @@ nav ul li:hover::after {
 }
 
 .button-main {
-  margin-top: 80px;
-  padding: 29px 48px;
-  font-size: 3.2em;
+  margin-top: 6.5rem;
+  
+  padding: 2.9rem 4.8rem;
+  font-size: 3.2rem;
   border: none;
   background-color: #004081;
   color: #fff;
   position: absolute;
-  left: 50px;
+  left: 5rem;
   font-weight: 700;
   cursor: pointer;
   border-radius: 50px;
+  box-shadow: inset 0px 0px 0px 3px #fff;
 }
 
 .button-main:hover {
-  box-shadow: inset 0px 0px 0px 3px #fff;
-  transition: 0.3s;
+  box-shadow: inset 0px 0px 0px 3px #004081;
+  background-color: #fff;
+  color: #004081;
+  transition: 0.5s;
 }
 
 /*====================Stages====================*/
 
-.section-stages {
+/**.section-stages {
   height: 100vh;
 }
-
+*/
 .title-sub {
-  font-size: 6em;
-  color: #fff;
-  padding-top: 60px;
-  padding-left: 50px;
+  font-size: 5em;
+  color: var(--sub-title-color);
+  padding-top: 6rem;
+  padding-left: 5rem;
 }
 
 .stages__list {
   display: flex;
   flex-wrap: wrap;
-  margin: 100px 50px 60px 50px;
+  margin: 10em 5em 6em 5em;
   list-style: none;
   flex-direction: column;
   align-items: flex-start;
   counter-reset: stage;
+  row-gap: 7em;
 }
 
 .stage {
@@ -215,12 +228,13 @@ nav ul li:hover::after {
   flex-wrap: nowrap;
   align-items: center;
   background-color: #004081;
-  padding: 20px 30px;
-  border-radius: 50px;
+  padding: 2rem 3rem;
+  border-radius: 5rem;
   position: relative;
-  font-size: 4em;
+  font-size: 4rem;
   text-align: center;
   box-shadow: inset 0px 0px 0px 5px #fff;
+  
 }
 
 .stage img {
@@ -228,10 +242,10 @@ nav ul li:hover::after {
 }
 
 .stage p {
-  max-width: 9em;
+
   font-size: inherit;
   color: #fff;
-  padding-left: 20px;
+  padding-left: 2rem;
 }
 
 .stage::before {
@@ -240,7 +254,7 @@ nav ul li:hover::after {
   background-color: red;
   border-radius: 50%;
   position: absolute;
-  left: 90%;
+  left: 92%;
   top: -20%;
   line-height: 2em;
   text-align: center;
@@ -249,27 +263,16 @@ nav ul li:hover::after {
   font-weight: 700;
   counter-increment: stage;
   content: "" counter(stage);
+  
 }
 
-.stage:nth-child(2) {
-  margin-right: 60px;
+.stage:nth-child(2), .stage:nth-child(4) {
+  margin-right: 0;
   margin-left: auto;
-  transform: translateY(-60px);
+ 
 }
 
-.stage:nth-child(4) {
-  margin-right: 60px;
-  margin-left: auto;
-  transform: translateY(-120px);
-}
-.stage:nth-child(3),
-.stage:nth-child(5) {
-  transform: translateY(-80px);
-}
 
-.stage:nth-child(5) {
-  transform: translateY(-160px);
-}
 
 /*-====================Containers====================*/
 
@@ -278,17 +281,20 @@ nav ul li:hover::after {
   justify-content: space-between;
   align-content: center;
   align-items: center;
-  padding-left: 75px;
-  padding-right: 75px;
+  padding-left: 7em;
+  padding-right: 7em;
   margin-top: 50px;
 }
 
 .container__img {
+  width: 30%;
   max-width: 512px;
+  
 }
 
 .containers__list {
-  max-width: 882px;
+  width: 70%;
+  max-width: 1000px;
   list-style: none;
   color: #fff;
   display: flex;
@@ -296,23 +302,25 @@ nav ul li:hover::after {
 }
 
 .container-type {
-  max-width: 380px;
+  width: 40%;
+  max-width: 384px;
   background-color: #004081;
-  margin-right: 60px;
-  margin-bottom: 60px;
-  padding: 30px 25px;
+  margin-left: 6rem;
+  margin-bottom: 6rem;
+  padding: 3rem 2.5rem;
   box-shadow: inset 0px 0px 0px 5px #fff;
-  border-radius: 30px;
+  border-radius: 3em;
+  flex: 1;
 }
 
 .container-type h3 {
-  font-size: 2.5em;
-  padding-bottom: 1.2em;
+  font-size: 2.5rem;
+  padding-bottom: 1.2rem;
   font-weight: 700;
 }
 
 .container-type p {
-  font-size: 2.3em;
+  font-size: 2.3rem;
   display: block;
 }
 
@@ -326,7 +334,7 @@ nav ul li:hover::after {
 .title-prices {
   font-size: 4.7rem;
   color: #fff;
-  margin: 70px auto;
+  margin: 7rem auto;
   text-align: center;
 }
 
@@ -336,17 +344,22 @@ nav ul li:hover::after {
   justify-items: center;
   align-items: center;
   justify-content: space-evenly;
+  list-style: none;
+  padding-bottom: 6em;
 }
 
 .prices__item {
+  width: 90%;
+  max-width: 512px;
   position: relative;
   text-align: center;
   border-radius: 50px;
+  
 }
 
 .prices-thumbnail {
-  max-width: 502px;
-  width: 100%;
+  width: inherit;
+  max-width: in;
   border-radius: 5em;
   opacity: 95%;
   background-color: #fff;
@@ -354,18 +367,19 @@ nav ul li:hover::after {
 }
 
 .prices-text__container {
+    width: 100%;
   font-size: inherit;
   position: absolute;
   top: 0;
   left: 50%;
   transform: translate(-50%);
   max-width: 500px;
-  width: 100%;
+
   padding: 4em 1em;
 }
 
 .route {
-  font-size: 5em;
+  font-size: 4em;
   color: #004081;
   font-weight: 700;
 }
@@ -383,28 +397,31 @@ nav ul li:hover::after {
 }
 
 .prices__button {
-  margin-top: 3.7em;
+  margin-top: 2em;
   margin-left: auto;
   margin-right: auto;
-  padding: 29px 48px;
-  font-size: 3.2em;
+  padding: 2.9rem 4.8rem;
+  font-size: 3rem;
   border: none;
   background-color: #004081;
   color: #fff;
 
   font-weight: 700;
   cursor: pointer;
-  border-radius: 50px;
+  border-radius: 5rem;
 }
 
 .prices__button:hover {
-  box-shadow: inset 0px 0px 0px 3px #fff;
-  transition: 0.3s;
+  box-shadow: inset 0px 0px 0px 3px #004081;
+  background-color: #fff;
+  color: #004081;
+  transition: 0.5s;
 }
 
 /*====================About====================*/
 .about-lining {
   display: flex;
+  align-items: center;
 }
 
 .about-text__container {
@@ -425,13 +442,14 @@ nav ul li:hover::after {
 }
 
 .about-advantages {
-  width: 60%;
+  width: 50%;
   margin-left: auto;
   margin-right: auto;
 }
 
 .about-map {
-  height: 100vh;
+  height: 80vh;
+
 }
 
 /*====================Footer====================*/
@@ -465,4 +483,11 @@ nav ul li:hover::after {
   padding-right: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+
+/*=====================@media====================*/
+
+@media (min-width: 1280px) {
+
 }
