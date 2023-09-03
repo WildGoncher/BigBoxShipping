@@ -10,7 +10,8 @@
   </head>
   <body>
     <header class="header">
-      <img class="nav-logo" src="img/Logo1.png" width="70" alt="logo" />
+      <a class="logo-link" href="#">
+      <img class="nav-logo" src="img/Logo1.png" width="70" alt="BigBoxShipping logo" />BigBoxShipping</a>
       <nav>
         <ul class="nav-links__container">
           <li><a href="#about" class="nav-link">Компания</a></li>
@@ -18,24 +19,24 @@
           <li><a href="#contacts" class="nav-link">Контакты</a></li>
         </ul>
       </nav>
-      <a class="button-link" href="tel:123456"
-        ><button class="button-header">Позвонить</button></a
+      <a class="button-header" href="tel:123456"
+        >Позвонить</a
       >
     </header>
     <main class="main">
-      <video autoplay muted loop id="videoBG">
-        <source src="vid/SeaContainerBackgroundVid.mp4" type="video/mp4" />
-      </video>
+      
 
       <section class="section section-main overlay1" id="greetings">
+        <video autoplay muted loop id="videoBG">
+          <source src="vid/SeaContainerBackgroundVid.mp4" type="video/mp4" />
+        </video>
         <h1 class="title-main">Транспортные услуги морем</h1>
 
         <p class="text text-main">
           Контейнерные перевозки любых грузов в Калининград
         </p>
-        <a class="button-link" href="#"
-          ><button class="button-main">Хочу отправить груз</button></a
-        >
+        <a class="button-main" href="#"
+          >Хочу отправить груз</a>
       </section>
       <section class="section section-stages" id="stages">
         <h2 class="title-sub">Мы осуществляем транспортировку в 5 этапов:</h2>
@@ -99,6 +100,7 @@
                 Вмещает <strong>25</strong> европалет.
               </p>
             </li>
+            <div class="flex-break"></div>
             <li class="container-type">
               <h3 class="title-cont-name">40' High Cube Pallet Wide</h3>
               <p class="container-description">
@@ -127,10 +129,11 @@
       </section>
       <section class="section" id="prices">
         <h2 class="title-sub">
-          Мы предлагаем доставку груза из любой точки России в Калининград и
-          наоборот - из Калининграда в любую точку России.
+         Доставка и стоимость
         </h2>
-        <h3 class="title-prices">Популярные маршруты и стоимость перевозок</h3>
+        <h3 class="prices-info">Мы предлагаем доставку груза из любой точки России в Калининград и
+          наоборот - из Калининграда в любую точку России.</h3>
+        <h4 class="prices-popular">Популярные маршруты и стоимость перевозок</h4>
         <ul class="prices__list">
           <li class="prices__item">
             <img
@@ -138,11 +141,11 @@
               src="img/icon/SaintPetersburg.png"
               alt="Разводной мост Санкт-петербург"
             />
-            <div class="prices-text__container">
+          
               <p class="route">Санкт-Петербург - Калининград</p>
               <p class="price">260 000 &#8381;</p>
               <p class="vat">(без НДС)</p>
-            </div>
+            
           </li>
           <li class="prices__item">
             <img
@@ -150,11 +153,11 @@
               src="img/icon/Moscow.png"
               alt="Собор Василия Блаженного"
             />
-            <div class="prices-text__container">
+            
               <p class="route">Москва - Калининград</p>
               <p class="price">320 000 &#8381;</p>
               <p class="vat">(без НДС)</p>
-            </div>
+            
           </li>
           <li class="prices__item">
             <img
@@ -162,12 +165,10 @@
               src="img/icon/RuMapPin.png"
               alt="Карта Российской Федерации"
             />
-            <div class="prices-text__container">
+           
               <p class="route">Рассчитать стоимость для своей локации</p>
-              <a class="button-link" href="#"
-                ><button class="prices__button">Узнать стоимость</button></a
-              >
-            </div>
+              <a class="prices__button" href="tel:123">Узнать стоимость</a>
+           
           </li>
         </ul>
       </section>
