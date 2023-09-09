@@ -277,7 +277,7 @@ nav ul li:hover::after {
   font-size: inherit;
   color: #fff;
   padding-left: 1vw;
-  margin-left: 1px;
+
 }
 
 .stage::before {
@@ -543,6 +543,7 @@ align-items: center;
 justify-content: flex-end;
 flex-direction: row;
 padding-right: 1vw;
+background-color: rgba(0, 64, 129, 1);
 }
 
 .made_by {
@@ -635,9 +636,10 @@ padding-right: 1vw;
     font-size: 10vw;
     color: rgb(0, 64, 129);
   }
-.title-sub {
-  padding-top: 7vw;
-}
+  .title-sub {
+    padding-top: 7vw;
+    font-size: 8vw;
+  }
 
   /*====================Stages====================*/
 
@@ -647,6 +649,7 @@ padding-right: 1vw;
   }
 
   .stage {
+    min-width: 70vw;
     font-size: 4vw;
   }
 
