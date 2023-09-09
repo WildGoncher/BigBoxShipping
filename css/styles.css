@@ -130,6 +130,7 @@ nav ul li:hover::after {
 .line {
   height: 2px;
   width: 30px;
+  border-radius: 2px;
   margin: 0.5rem 0;
   background: rgb(255, 255, 255);
   transition: transform 0.75s ease, opacity 0.75s ease;
@@ -276,6 +277,7 @@ nav ul li:hover::after {
   font-size: inherit;
   color: #fff;
   padding-left: 1vw;
+  margin-left: 1px;
 }
 
 .stage::before {
@@ -289,7 +291,7 @@ nav ul li:hover::after {
   line-height: 7vh;
   text-align: center;
   color: rgb(255, 255, 255);
-  box-shadow: inset 0px 0px 0px 3px rgb(255, 255, 255);
+  box-shadow: inset 0px 0px 0px 2px rgb(255, 255, 255);
   font-weight: 700;
   counter-increment: stage;
   content: "" counter(stage);
