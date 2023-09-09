@@ -10,22 +10,33 @@
   </head>
   <body>
     <header class="header">
-      <a class="logo-link" href="#">
-      <img class="nav-logo" src="img/Logo1.png" width="70" alt="BigBoxShipping logo" />BigBoxShipping</a>
-      <nav>
-        <ul class="nav-links__container">
-          <li><a href="#about" class="nav-link">Компания</a></li>
-          <li><a href="#services" class="nav-link">Услуги</a></li>
-          <li><a href="#contacts" class="nav-link">Контакты</a></li>
-        </ul>
+      <nav class="main-nav">
+        <a class="logo-link" href="#">
+          <img
+            class="nav-logo"
+            src="img/Logo1.png"
+            width="70"
+            alt="BigBoxShipping logo"
+          />BigBoxShipping</a
+        >
+        <div class="menu">
+          <ul class="nav-links">
+            <li><a href="#main" class="nav-link">Главная</a></li>
+            <li><a href="#about" class="nav-link">Компания</a></li>
+            <li><a href="#services" class="nav-link">Услуги</a></li>
+            <li><a href="#contacts" class="nav-link">Контакты</a></li>
+            <a class="button-header" href="tel:123456">Позвонить</a>
+          </ul>
+          <div class="burger">
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+            <div class="line line3"></div>
+          </div>
+        </div>
+        
       </nav>
-      <a class="button-header" href="tel:123456"
-        >Позвонить</a
-      >
     </header>
     <main class="main">
-      
-
       <section class="section section-main overlay1" id="greetings">
         <video autoplay muted loop id="videoBG">
           <source src="vid/SeaContainerBackgroundVid.mp4" type="video/mp4" />
@@ -33,21 +44,18 @@
         <h1 class="title-main">Транспортные услуги морем</h1>
 
         <p class="text text-main">
-          Контейнерные перевозки любых грузов в Калининград
+         Контейнерные перевозки любых грузов в Калининград
         </p>
         <!--
           <a class="button-main" href="#"
           >Хочу отправить груз</a>
-        -->  
+        -->
       </section>
       <section class="section section-stages" id="stages">
         <h2 class="title-sub">Мы осуществляем транспортировку в 5 этапов:</h2>
         <ul class="stages__list">
           <li class="stage">
-            <img
-              src="img/icon/contractSign.png"
-              alt="заключение договора"
-            />
+            <img src="img/icon/contractSign.png" alt="заключение договора" />
             <p class="stages-text-bubble">Заключение договора</p>
           </li>
           <li class="stage">
@@ -71,10 +79,14 @@
           </li>
         </ul>
       </section>
-      <section class="section " id="containers">
+      <section class="section section-containers" id="containers">
         <h2 class="title-sub">Наши контейнеры</h2>
         <div class="containers-wrapper">
-          <img  class="container__img" src="img/icon/containerBunch.png" alt="куча контейнеров" />
+          <img
+            class="container__img"
+            src="img/icon/containerBunch.png"
+            alt="куча контейнеров"
+          />
           <ul class="containers__list">
             <li class="container-type">
               <h3 class="title-cont-name">40' Dry Van (Dry Freight)</h3>
@@ -130,12 +142,14 @@
         </div>
       </section>
       <section class="section" id="prices">
-        <h2 class="title-sub">
-         Доставка и стоимость
-        </h2>
-        <h3 class="prices-info">Мы предлагаем доставку груза из любой точки России в Калининград и
-          наоборот - из Калининграда в любую точку России.</h3>
-        <h4 class="prices-popular">Популярные маршруты и стоимость перевозок</h4>
+        <h2 class="title-sub">Доставка и стоимость</h2>
+        <h3 class="prices-info">
+          Мы предлагаем доставку груза из любой точки России в Калининград и
+          наоборот - из Калининграда в любую точку России.
+        </h3>
+        <h4 class="prices-popular">
+          Популярные маршруты и стоимость перевозок
+        </h4>
         <ul class="prices__list">
           <li class="prices__item">
             <img
@@ -143,11 +157,10 @@
               src="img/icon/SaintPetersburg.png"
               alt="Разводной мост Санкт-петербург"
             />
-          
-              <p class="route">Санкт-Петербург - Калининград</p>
-              <p class="price">260 000 &#8381;</p>
-              <p class="vat">(без НДС)</p>
-            
+
+            <p class="route">Санкт-Петербург - Калининград</p>
+            <p class="price">260 000 &#8381;</p>
+            <p class="vat">(без НДС)</p>
           </li>
           <li class="prices__item">
             <img
@@ -155,11 +168,10 @@
               src="img/icon/Moscow.png"
               alt="Собор Василия Блаженного"
             />
-            
-              <p class="route">Москва - Калининград</p>
-              <p class="price">320 000 &#8381;</p>
-              <p class="vat">(без НДС)</p>
-            
+
+            <p class="route">Москва - Калининград</p>
+            <p class="price">320 000 &#8381;</p>
+            <p class="vat">(без НДС)</p>
           </li>
           <li class="prices__item">
             <img
@@ -167,14 +179,17 @@
               src="img/icon/RuMapPin.png"
               alt="Карта Российской Федерации"
             />
-           
-              <p class="route">Рассчитать стоимость для своей локации</p>
-              <a class="prices__button" href="mailto:info@bbship.ru?subject=Запрос стоимости перевозки">Узнать стоимость</a>
-           
+
+            <p class="route">Рассчитать стоимость для своей локации</p>
+            <a
+              class="prices__button"
+              href="mailto:info@bbship.ru?subject=Запрос стоимости перевозки"
+              >Узнать стоимость</a
+            >
           </li>
         </ul>
       </section>
-      <section class="section about-lining" id="about">
+      <section class="section about-layout" id="about">
         <img
           class="about-map"
           src="svg/MapNarrow.svg"
@@ -196,7 +211,6 @@
             клиенты могли удовлетворять свои потребности в максимально простой
             форме и в кратчайшие сроки.
           </p>
-          
         </div>
       </section>
     </main>
@@ -213,5 +227,6 @@
         /></a>
       </div>
     </footer>
+    <script src="scripts/script.js"></script>
   </body>
 </html>
