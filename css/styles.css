@@ -7,9 +7,9 @@
   --overlay1-color1: rgba(0, 0, 0, 0.3);
   --overlay1-color2: rgba(0, 0, 0, 0.2) 70%;
   --overlay1-color3: rgb(255, 255, 255) 93%;
-  --overlay2-color1: rgb(255, 255, 255);
-  --overlay2-color2: rgb(255, 255, 255);
-  --overlay2-color3: rgb(255, 255, 255);
+  --m-overlay1-color1: rgba(0, 0, 0, 0.2) 80%;
+  --m-overlay1-color2: rgba(0, 0, 0, 0.1) ;
+  --m-overlay1-color3: rgba(255, 255, 255, 1) 100%;
 
   --main-title-color: rgb(255, 255, 255);
   --sub-title-color: rgb(0, 64, 129);
@@ -634,12 +634,18 @@ background-color: rgba(0, 64, 129, 1);
   /*====================Main====================*/
 
   #videoBG {
-    overflow: hidden;
+    display: none;
+   
   }
- 
+  
+  
   .section-main{
-    
     height: 100vh;
+    background: linear-gradient(
+      var(--m-overlay1-color1),
+      var(--m-overlay1-color2),  
+      var(--m-overlay1-color3)
+    ),url(/img/sdfsdfsdfs-transformed.png);
   }
   .title-main {
     margin: 14vh auto;
@@ -665,8 +671,9 @@ background-color: rgba(0, 64, 129, 1);
   }
 
   .stage {
-    min-width: 60vw;
-    font-size: 2.1vh;
+    max-width: 60vw;
+    text-align: center;
+    font-size: 2.3vh;
     padding-left: 3vw;
  
   }
