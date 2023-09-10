@@ -634,7 +634,7 @@ background-color: rgba(0, 64, 129, 1);
   /*====================Main====================*/
 
   #videoBG {
-
+    overflow: hidden;
   }
  
   .section-main{
