@@ -14,28 +14,29 @@
         <a class="logo-link" href="#">
           <img
             class="nav-logo"
-            src="img/Logo1.png"
-            width="70"
+            src="svg/BBS_logo.svg"
             alt="BigBoxShipping logo"
-          />BigBoxShipping</a
+          /></a
         >
         <div class="menu">
           <ul class="nav-links">
             <li><a href="#main" class="nav-link">Главная</a></li>
             <li><a href="#about" class="nav-link">Компания</a></li>
             <li><a href="#services" class="nav-link">Услуги</a></li>
-            <li><a href="#contacts" class="nav-link">Контакты</a></li>
-            <a class="button-header" href="tel:123456">Позвонить</a>
+            <!--<li><a href="#contacts" class="nav-link">Контакты</a></li>-->
+            <div><a class="button-header" id="header-btn" href="tel:123456">Позвонить</a></div>
           </ul>
+          
           <div class="burger">
             <div class="line line1"></div>
             <div class="line line2"></div>
             <div class="line line3"></div>
           </div>
         </div>
+
       </nav>
     </header>
-    <main class="main">
+    <main class="main" id="main">
       <section class="section section-main overlay1" id="greetings">
         <video autoplay muted loop id="videoBG">
           <source src="vid/SeaContainerBackgroundVid.mp4" type="video/mp4" />
@@ -140,7 +141,7 @@
           </ul>
         </div>
       </section>
-      <section class="section" id="prices">
+      <section class="section" id="services">
         <h2 class="title-sub">Доставка и стоимость</h2>
         <h3 class="prices-info">
           Мы предлагаем доставку груза из любой точки России в Калининград и
