@@ -153,30 +153,6 @@ nav ul li:hover::after {
 }
 
 /*====================Main====================*/
-
-.overlay1 {
-  background: linear-gradient(
-    var(--overlay1-color1),
-    var(--overlay1-color2),
-    var(--overlay1-color3)
-  );
-
-  background-size:cover;
-  background-blend-mode: overlay;
-}
-/*
-.overlay2 {
-  background: linear-gradient(
-    var(--overlay2-color1),
-    var(--overlay2-color2),
-    var(--overlay2-color3)
-  );
-
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-*/
 #videoBG {
   position: absolute;
   min-width: 100%;
@@ -192,7 +168,14 @@ nav ul li:hover::after {
 }
 .section-main {
   height: calc(100vh + 8vh);
-  
+  width: 100%;
+
+  overflow: hidden;
+  background: linear-gradient(
+    var(--overlay1-color1),
+    var(--overlay1-color2),
+    var(--overlay1-color3)
+  );
 }
 
 .title-main {
@@ -641,11 +624,9 @@ background-color: rgba(0, 64, 129, 1);
   
   .section-main{
     height: 100vh;
-    background: url(/img/sdfsdfsdfs-transformed.png), linear-gradient(
-      var(--m-overlay1-color1),
-      var(--m-overlay1-color2),  
-      var(--m-overlay1-color3)
-    );
+    background:rgb(0, 64, 129);
+    background-image: url(/img/sdfsdfsdfs-transformed.png);
+    box-shadow: inset 0px -60px 40px 0px rgb(255, 255, 255);
   }
   .title-main {
     margin: 14vh auto;
