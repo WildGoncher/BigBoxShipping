@@ -624,9 +624,7 @@ background-color: rgba(0, 64, 129, 1);
   
   .section-main{
     height: 100vh;
-    background:rgb(0, 64, 129);
     background-image: url(/img/sdfsdfsdfs-transformed.png);
-    box-shadow: inset 0px -60px 40px 0px rgb(255, 255, 255);
   }
   .title-main {
     margin: 14vh auto;
