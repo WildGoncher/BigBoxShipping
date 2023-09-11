@@ -623,6 +623,7 @@ background-color: rgba(0, 64, 129, 1);
   
   
   .section-main{
+    width: 100vw;
     height: 100vh;
     background-image: linear-gradient(
       var(--overlay1-color1),
@@ -630,6 +631,7 @@ background-color: rgba(0, 64, 129, 1);
       var(--overlay1-color3)
     ), url(../img/sdfsdfsdfs-transformed.png);
     background-position: center;
+    background-repeat: no-repeat;
   }
   .title-main {
     margin: 14vh auto;
