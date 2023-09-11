@@ -624,7 +624,7 @@ background-color: rgba(0, 64, 129, 1);
   
   .section-main{
     height: 100vh;
-    background-image: url(/img/sdfsdfsdfs-transformed.png);
+    background-image: url(../img/sdfsdfsdfs-transformed.png);
   }
   .title-main {
     margin: 14vh auto;
