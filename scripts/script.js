@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", phone);
 function phone() {
   const phoneBtn = document.getElementById("header-btn");
   phoneBtn.onmouseover = () => {
-    phoneBtn.innerHTML = "8-800-555-55-55";
+    phoneBtn.innerHTML = "8-800-250-28-42";
   };
   phoneBtn.onmouseout = () => {
     phoneBtn.innerHTML = "Позвонить";
