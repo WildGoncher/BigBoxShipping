@@ -508,7 +508,6 @@ nav ul li:hover::after {
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
-
   /*====================Navigation====================*/
 
   .main-nav {
@@ -573,7 +572,6 @@ nav ul li:hover::after {
   .text-main {
     margin: 15vh auto;
     font-size: 10vw;
-    
   }
   .title-sub {
     padding-top: 7vw;
@@ -596,7 +594,7 @@ nav ul li:hover::after {
     height: 7vh;
   }
 
-  .stage p{
+  .stage p {
     width: fit-content;
   }
   .stage::before {
@@ -604,11 +602,11 @@ nav ul li:hover::after {
     height: 4vh;
     line-height: 4vh;
   }
-.stage:nth-child(2),
-.stage:nth-child(4) {
-  margin-right: 4vw;
-  margin-left: auto;
-}
+  .stage:nth-child(2),
+  .stage:nth-child(4) {
+    margin-right: 4vw;
+    margin-left: auto;
+  }
   /*-====================Containers====================*/
 
   .containers-wrapper {
@@ -660,7 +658,9 @@ nav ul li:hover::after {
   .prices__button {
     font-size: 5vw;
   }
-  
+
+  /*====================Form====================*/
+
   /*====================About====================*/
 
   .about-text__container {
