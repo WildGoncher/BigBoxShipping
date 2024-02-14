@@ -1,0 +1,2 @@
+User-agent: Yandex
+Sitemap: https://bbship.ru/sitemap.xml

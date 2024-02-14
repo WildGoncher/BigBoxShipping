@@ -17,3 +17,15 @@ function phone() {
     phoneBtn.innerHTML = "Позвонить";
   };
 }
+
+
+function mailTo() {
+  const mailBtn = document.getElementById("headerMailBtn");
+  mailBtn.onmouseover = () => {
+    mailBtn.innerHTML = "info@bbship.ru";
+  };
+  mailBtn.onmouseout = () => {
+    mailBtn.innerHTML = "Написать";
+  };
+}
+document.addEventListener("DOMContentLoaded", mailTo);
