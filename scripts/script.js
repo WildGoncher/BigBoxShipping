@@ -5,6 +5,11 @@ function nav() {
   burger.addEventListener("click", () => {
     nav.classList.toggle("show");
   });
+  document.addEventListener("click", (event) => {
+    if (!nav.contains(event.target) && !burger.contains(event.target)) {
+      nav.classList.remove("show");
+    }
+  });
 }
 
 document.addEventListener("DOMContentLoaded", phone);
