@@ -143,12 +143,6 @@ nav ul li:hover::after {
 
 /*====================Main====================*/
 
-#videoBG {
-  position: absolute;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: -1;
-}
 .section {
   width: 100%;
   height: 100%;
@@ -164,6 +158,19 @@ nav ul li:hover::after {
     var(--overlay1-color3)
   );
 }
+
+.video-container {
+  position: relative;
+}
+
+#videoBG {
+  position: absolute;
+  top: 8vh;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
 .title-main {
   width: 90vw;
   font-size: 10vh;
