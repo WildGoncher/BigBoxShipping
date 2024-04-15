@@ -36,12 +36,12 @@ function mailTo() {
 document.addEventListener("DOMContentLoaded", mailTo);
 
 //smooth scrolling
+// Define your section IDs
 const sectionIds = ['greetings', 'stages', 'containers', 'services', 'about'];
 const sections = sectionIds.map(id => document.getElementById(id));
 
-document.addEventListener('wheel', (event) => {
-    const scrollDirection = event.deltaY > 0 ? 1 : -1;
-
+// Function to find the nearest section based on scroll direction
+function findNearestSection(scrollDirection) {
     const visibleSection = sections.find(section =>
         section.getBoundingClientRect().top >= 0 &&
         section.getBoundingClientRect().bottom <= window.innerHeight
@@ -50,10 +50,24 @@ document.addEventListener('wheel', (event) => {
     const visibleIndex = sections.indexOf(visibleSection);
 
     if (scrollDirection === 1) {
-        const nextIndex = (visibleIndex + 1) % sections.length;
-        sections[nextIndex].scrollIntoView({ behavior: 'smooth' });
+        // Scroll down: Go to the next section
+        return (visibleIndex + 1) % sections.length;
     } else {
-        const prevIndex = (visibleIndex - 1 + sections.length) % sections.length;
-        sections[prevIndex].scrollIntoView({ behavior: 'smooth' });
+        // Scroll up: Go to the previous section
+        return (visibleIndex - 1 + sections.length) % sections.length;
     }
+}
+
+// Smooth scroll function
+function smoothScrollToSection(index) {
+    sections[index].scrollIntoView({ behavior: 'smooth' });
+}
+
+// Listen for the wheel event
+document.addEventListener('wheel', (event) => {
+    const scrollDirection = event.deltaY > 0 ? 1 : -1;
+    const nearestSectionIndex = findNearestSection(scrollDirection);
+    smoothScrollToSection(nearestSectionIndex);
 });
+
+
